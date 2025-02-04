@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    background-color: #003087;
+    color: white;
+    padding: 10px;
+}
+
+.team-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.team-button {
+    display: inline-block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1000;
+    position: relative; /* Ensures it's not covered by other elements */
+}
+
+
+.team-button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+
+/* Date Section Styling */
+.date-section {
+    background: white;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    text-align: left;
+}
+
+.date-header {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid #007BFF;
+}
+
+/* Game Grid (2 games per row) */
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+/* Individual Game Card */
+.game-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    background-color: #007BFF;
+    color: white;
+}
+
+.game-card.selected {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Ensures Logos & Team Names are Aligned */
+.game-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .game-list {
+        grid-template-columns: repeat(1, 1fr); /* 1 game per row on mobile */
+    }
+}
+
+.game-card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.game-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-logo {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+}
+
+.vs {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.game-details h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.select-game {
+    background: blue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#inningsContainer {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.inning-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.inning-button:hover {
+    background-color: #0056b3;
+}
+
+#insightContainer {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+#inningsContainer {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.innings-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.inning-button {
+    background-color: #007bff;
+    color: white;
+    border: none;å
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    min-width: 120px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.inning-button:hover {
+    background-color: #0056b3;
+}
+
+#insightContainer {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
