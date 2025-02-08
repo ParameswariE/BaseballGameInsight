@@ -13,18 +13,17 @@ Base-running decisions: Why a player steals a base at a specific moment. These i
 ## How we built it
 We started by collecting the necessary datasets from the MLB StatsAPI and the MLB GitHub repository. The key datasets included:
 
-**Live Game Data (GUMBO Data Feeds):**Provided real-time updates on the state of a baseball game.
-**Historical Game Data: **Included detailed information about past games, such as play-by-play data, pitch-by-pitch data, and player statistics.
-** Player and Team Statistics: **Detailed statistics for players and teams, including batting averages, pitching stats, and fielding metrics.
-** Advanced Metrics (Statcast Data): **Included advanced metrics such as pitch speed, exit velocity, and home run distance.
-** Data Processing: **We cleaned and preprocessed the data to make it suitable for analysis. This involved handling missing values, normalizing data, and creating features that capture the current game context and player performance. We also merged live game data with historical statistics to create a comprehensive dataset.
-** Feature Engineering: **We engineered features that represent the game situation, such as the inning, score, number of outs, and base runners. These features were crucial for understanding the context of each play and generating relevant insights.
-** Model Development: **We trained a machine learning model using historical game data to recognize patterns and predict the likely strategy based on the current game context. We used a Random Forest Classifier to classify the type of play or strategy (e.g., bunt, steal, pitch type) based on the situational features.
-** Real-Time Analysis:**We integrated the GUMBO live data feed into our application to provide real-time updates. The live game data was continuously fed into our model to generate real-time predictions and insights. We used these predictions to provide tool tips that explain the tactics behind each play.
-** Interactive Application:**We developed an interactive application using Flask and Streamlit to display real-time insights and tool tips. The user interface was designed to be intuitive and user-friendly, allowing casual viewers to easily understand the strategies and tactics behind each play.
+**Live Game Data (GUMBO Data Feeds):** Provided real-time updates on the state of a baseball game.
+**Historical Game Data:** Included detailed information about past games, such as play-by-play data, pitch-by-pitch data, and player statistics.
+**Player and Team Statistics:** Detailed statistics for players and teams, including batting averages, pitching stats, and fielding metrics.
+**Advanced Metrics (Statcast Data):** Included advanced metrics such as pitch speed, exit velocity, and home run distance.
+**Data Processing:** We cleaned and preprocessed the data to make it suitable for analysis. This involved handling missing values, normalizing data, and creating features that capture the current game context and player performance. We also merged live game data with historical statistics to create a comprehensive dataset.
+**Feature Engineering:** We engineered features that represent the game situation, such as the inning, score, number of outs, and base runners. These features were crucial for understanding the context of each play and generating relevant insights.
+**Model Development:** We trained a machine learning model using historical game data to recognize patterns and predict the likely strategy based on the current game context. We used a Random Forest Classifier to classify the type of play or strategy (e.g., bunt, steal, pitch type) based on the situational features.
+**Real-Time Analysis:** We integrated the GUMBO live data feed into our application to provide real-time updates. The live game data was continuously fed into our model to generate real-time predictions and insights. We used these predictions to provide tool tips that explain the tactics behind each play.
+**Interactive Application:** We developed an interactive application using Flask and Streamlit to display real-time insights and tool tips. The user interface was designed to be intuitive and user-friendly, allowing casual viewers to easily understand the strategies and tactics behind each play.
 **Testing and Iteration:** We thoroughly tested our application to ensure it worked as expected. We gathered feedback from potential users and made necessary improvements to enhance the user experience and the accuracy of our insights.
-** Deployment: **
-We deployed our application on Google Cloud using Cloud Run for scalable and managed execution. We also used Vertex AI for model training and deployment, ensuring seamless integration with our application.
+**Deployment:** We deployed our application on Google Cloud using Cloud Run for scalable and managed execution. We also used Vertex AI for model training and deployment, ensuring seamless integration with our application.
 
 By leveraging the available data and using machine learning models, we built a robust application that provides meaningful and real-time insights into baseball strategy, enhancing the fan experience during live games.
 ## Challenges we ran into
