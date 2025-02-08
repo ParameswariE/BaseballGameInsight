@@ -1,9 +1,13 @@
+![MLB Game](images/Game.png 
+    "MLB Game")
 # BaseballGameInsight
 Baseball is a deeply strategic sport, but for casual viewers, understanding the why behind key decisions—pitch selection, defensive shifts, and base-running tactics—can be a challenge. We wanted to create a real-time AI-driven tool that simplifies the complexities of the game, making it more engaging and accessible for everyone. Our inspiration came from sports analytics advancements and the desire to enhance the fan experience by providing instant, easy-to-understand insights.
 
 Our AI-powered tool provides real-time baseball insights, decoding strategies behind every play. It enhances fan engagement by making complex tactics simple and accessible.
 
 # What it does
+![MLB Game Innings](images/innings.png
+    "MLB Game")
 Our application analyzes live baseball games and provides real-time strategic insights for viewers. It explains the reasoning behind key plays, including:
 
 Pitch selection: Why a pitcher chose a fastball instead of a curveball. 
@@ -45,6 +49,8 @@ Simplifying complex strategies: Translating in-depth analytics into digestible, 
 
 Integration with live streams: Ensuring a seamless overlay experience for users viewing games in real-time.
 ## Accomplishments that we're proud of
+![MLB Game Innings](images/insight.png
+    "MLB Game")
 Successfully built a working AI model that can analyze and explain key baseball strategies.
 Integrated Snowflake Cortex AI for real-time decision-making.
 Developed an interactive UI that delivers insights in a non-intrusive, engaging manner.
