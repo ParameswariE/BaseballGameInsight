@@ -38,8 +38,11 @@ We started by collecting the necessary datasets from the MLB StatsAPI and the ML
 By leveraging the available data and using machine learning models, we built a robust application that provides meaningful and real-time insights into baseball strategy, enhancing the fan experience during live games.
 ## Challenges we ran into
 Real-time data processing: Handling live sports data efficiently without delays.
+
 Training ML models: Creating an accurate predictive model required extensive historical data and fine-tuning.
+
 Simplifying complex strategies: Translating in-depth analytics into digestible, fan-friendly insights was a unique challenge.
+
 Integration with live streams: Ensuring a seamless overlay experience for users viewing games in real-time.
 ## Accomplishments that we're proud of
 Successfully built a working AI model that can analyze and explain key baseball strategies.
@@ -54,8 +57,11 @@ The challenges and benefits of integrating AI with live data streams.
 The role of user experience (UX) design in making AI-generated insights engaging and accessible.
 ## What's next for Baseball Game Insights
 Enhance AI accuracy by training models with more historical game data.
+
 ✅ Expand to other sports, such as football and basketball, to provide real-time insights.
+
 ✅ Develop mobile app support, allowing users to access insights anywhere.
+
 ✅ Integrate with AR/VR, providing an immersive second-screen experience for fans.
 
 
